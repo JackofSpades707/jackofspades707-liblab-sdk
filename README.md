@@ -38,7 +38,7 @@ quotes = Quote.get(page=2)
 # And so on...
 ```
 * Check out the `get` method [here](https://github.com/JackofSpades707/jackofspades707-liblab-sdk/blob/master/lotr_sdk/mixins.py) for more details
-* The following classes all have the same methods to them:
+* The following classes all inherit from the `ApiMixIn` class
   - Book
   - Movie
   - Character
