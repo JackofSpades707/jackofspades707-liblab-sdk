@@ -7,9 +7,12 @@ This is a sample SDK as a take home assessment for liblab
 ## Example uses:
 ```python
 
-from lotr_sdk import Book, Movie
+from lotr_sdk import Book, Movie, Quote
 # Get all books
 books = Book.get()
+
+# Get only 2 books
+books = Book.get(limit=2)
 
 # Get a certain book
 id = "5cf5805fb53e011a64671582"
@@ -26,8 +29,12 @@ movie = Movie.get(id)
 movie = Movie.get(id)
 quotes = movie.quotes
 
+# Get 2nd page of quotes
+quotes = Quote.get(page=2)
+
 # And so on...
 ```
+* Check out the `get` method [here](https://github.com/JackofSpades707/jackofspades707-liblab-sdk/blob/master/lotr_sdk/mixins.py) for more details
 
 ## Testing:
 * Install pytest `python -m pip install pytest`
