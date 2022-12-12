@@ -1,3 +1,6 @@
+## Lord of the Rings SDK
+This is a sample SDK as a take home assessment for liblab
+
 ## Install
 * `pip install jackofspades_lib_lab_lotr`
 
