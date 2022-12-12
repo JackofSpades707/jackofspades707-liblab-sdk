@@ -13,13 +13,14 @@ class ApiMixIn:
         return f"{BASE_URL}/{self.__class__.__name__.lower()}"
 
     @classmethod
-    def serialize(cls, resp) -> Union[list[Any], Any]:
+    def serialize(cls, json) -> Union[list[Any], Any]:
         """
         serializes a response into the appropriate object
         return a list of objects if multiple objects are present in the response
         """
         retval = []
-        for item in resp.json()["docs"]:
+        for item in json:
+            print(item)
             try:
                 item = cls(*item.values())
             except Exception:
@@ -44,4 +45,4 @@ class ApiMixIn:
         url = f"{BASE_URL}/{cls.__name__.lower()}"
         url = f"{url}/{id}" if id else url
         resp = session.get(url)
-        return cls.serialize(resp)
+        return cls.serialize(resp.json()['docs'])

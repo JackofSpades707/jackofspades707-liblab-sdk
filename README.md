@@ -28,5 +28,6 @@ quotes = movie.quotes
 ```
 
 ## Testing:
-* To be continued...
-* What I'd like to do, is mock out the response data and verify the output of the serialize method for the various classes.
+* Install pytest `python -m pip install pytest`
+* run `bash test.sh`
+* or run `python -m pytest tests` from the projects root directory
