@@ -15,7 +15,6 @@ books = Book.get()
 id = "5cf5805fb53e011a64671582"
 book = Book.get(id)
 
-
 # Get all movies
 movies = Movie.get()
 
