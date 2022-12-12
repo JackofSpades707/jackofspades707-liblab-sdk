@@ -2,6 +2,7 @@ from .conf import BASE_URL
 from .Session import session
 from typing import Union, Any
 
+
 class ApiMixIn:
     """An API MixIn for better mantainability"""
 
@@ -32,7 +33,7 @@ class ApiMixIn:
         return retval[0] if len(retval) == 1 else retval
 
     @classmethod
-    def get(cls, id=None, limit=None, page=None):
+    def get(cls, id=None, limit=100, page=1, offset=0):
         """
         retrieves data from the API & returns the serialized result of the query
 
@@ -43,5 +44,8 @@ class ApiMixIn:
         """
         url = f"{BASE_URL}/{cls.__name__.lower()}"
         url = f"{url}/{id}" if id else url
+        url = f"{url}?limit={limit}"
+        url = f"{url}&page={page}"
+        url = f"{url}&offset={offset}"
         resp = session.get(url)
-        return cls.serialize(resp.json()['docs'])
+        return cls.serialize(resp.json()["docs"])
