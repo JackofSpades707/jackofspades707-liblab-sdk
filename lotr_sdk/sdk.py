@@ -146,7 +146,7 @@ class Quote(ApiMixIn):
 class Chapter(ApiMixIn):
     """represents a chapter in a book"""
 
-    def __init__(self, id, name, book_id):
+    def __init__(self, id: str, name: str, book_id: str):
         self.id = id
         self.name = name
         self._book_id = book_id
