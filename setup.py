@@ -8,7 +8,7 @@ setuptools.setup(
     name="jackofspades_lib_lab_lotr",
 
     # version of the module
-    version="0.0.6",
+    version="0.1.0",
 
     # Name of Author
     author="JackofSpades707",

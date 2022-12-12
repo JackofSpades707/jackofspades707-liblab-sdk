@@ -18,7 +18,7 @@ class Book(ApiMixIn):
         """query all chapters for the current book object"""
         url = f"{self.endpoint}/{self.id}/chapter"
         resp = session.get(url)
-        return Chapter.serialize(resp)
+        return Chapter.serialize(resp.json()["docs"])
 
 
 class Movie(ApiMixIn):
@@ -58,7 +58,7 @@ class Movie(ApiMixIn):
         """returns all quotes for a given movie"""
         url = f"{self.endpoint}/{self.id}/quote"
         resp = session.get(url)
-        return Quote.serialize(resp)
+        return Quote.serialize(resp.json()["docs"])
 
 
 class Character(ApiMixIn):
@@ -111,7 +111,7 @@ class Character(ApiMixIn):
         # TODO: testme
         url = f"{self.endpoint}/{self.id}/quote"
         resp = session.get(url)
-        return Quote.serialize(resp)
+        return Quote.serialize(resp.json()["docs"])
 
 
 class Quote(ApiMixIn):

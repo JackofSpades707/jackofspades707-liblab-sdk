@@ -20,7 +20,6 @@ class ApiMixIn:
         """
         retval = []
         for item in json:
-            print(item)
             try:
                 item = cls(*item.values())
             except Exception:
