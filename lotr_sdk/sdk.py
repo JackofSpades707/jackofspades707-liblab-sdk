@@ -36,13 +36,13 @@ class Movie(ApiMixIn):
         score: int,
     ):
         """
-        :param id (str): movies unique identifier
-        :param name (str): name of movie
-        :param run_time (int): the movies run_time in minutes
-        :param budget (int): the movies budget in millions
-        :param nominations (int): the number of nominations the movie was considered for
-        :param nomination_wins (int): the number of nominations the movie won
-        :param score (int): Rotten Tomatoes critic rating
+        :param id: movies unique identifier
+        :param name: name of movie
+        :param run_time: the movies run_time in minutes
+        :param budget: the movies budget in millions
+        :param nominations: the number of nominations the movie was considered for
+        :param nomination_wins: the number of nominations the movie won
+        :param score: Rotten Tomatoes critic rating
         """
         self.id = id
         self.name = name
