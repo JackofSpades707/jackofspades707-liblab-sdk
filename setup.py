@@ -8,7 +8,7 @@ setuptools.setup(
     name="jackofspades_lib_lab_lotr",
 
     # version of the module
-    version="0.0.4",
+    version="0.0.6",
 
     # Name of Author
     author="JackofSpades707",
@@ -35,10 +35,7 @@ setuptools.setup(
 
 
 
-    #     install_requires=[
-    #      "package1",
-    #    "package2",
-    #    ],
+    install_requires=["requests"],
 
 
     license="MIT",
