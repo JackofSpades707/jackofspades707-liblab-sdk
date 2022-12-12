@@ -1,5 +1,5 @@
 ## Install
-* `pip install jackofspades_liblab_lotr`
+* `pip install jackofspades_lib_lab_lotr`
 
 ## Example uses:
 ```python
