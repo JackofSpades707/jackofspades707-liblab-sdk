@@ -1,5 +1,5 @@
-from mixins import ApiMixIn
-from Session import session
+from .mixins import ApiMixIn
+from .Session import session
 
 
 class Book(ApiMixIn):

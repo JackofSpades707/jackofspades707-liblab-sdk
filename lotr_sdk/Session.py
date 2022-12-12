@@ -1,6 +1,6 @@
 import requests
 from requests.adapters import HTTPAdapter, Retry
-from conf import API_KEY
+from .conf import API_KEY
 
 # Create the session with retries
 session = requests.Session()

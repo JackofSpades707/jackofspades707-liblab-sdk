@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     # Here is the module name.
-    name="jackofspades_liblab_lotr",
+    name="jackofspades_lib_lab_lotr",
 
     # version of the module
-    version="0.0.1",
+    version="0.0.2",
 
     # Name of Author
     author="JackofSpades707",

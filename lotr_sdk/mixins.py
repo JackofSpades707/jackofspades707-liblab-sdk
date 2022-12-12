@@ -1,5 +1,5 @@
-from conf import BASE_URL
-from Session import session
+from .conf import BASE_URL
+from .Session import session
 from typing import Union, Any
 
 class ApiMixIn:
