@@ -136,10 +136,12 @@ class Quote(ApiMixIn):
 
     @property
     def movie(self):
+        '''gets the Movie object associated with this quote'''
         return Movie.get(self._movie_id)
 
     @property
     def character(self):
+        '''get the Character object of the character who says the quote'''
         return Character.get(self._character_id)
 
 
