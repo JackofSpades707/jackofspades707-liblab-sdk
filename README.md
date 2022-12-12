@@ -11,6 +11,9 @@ from lotr_sdk import Book, Movie, Quote
 # Get all books
 books = Book.get()
 
+# Create a custom book
+book = Book(id="some_id", name="My Fanfic book")
+
 # Get only 2 books
 books = Book.get(limit=2)
 
