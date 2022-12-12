@@ -4,7 +4,7 @@
 ## Example uses:
 ```python
 
-from lotr_sdk import Book, Movies
+from lotr_sdk import Book, Movie
 # Get all books
 books = Book.get()
 
@@ -14,7 +14,7 @@ book = Book.get(id)
 
 
 # Get all movies
-movies = Movies.get()
+movies = Movie.get()
 
 # Get a certain movie
 id = "5cd95395de30eff6ebccde56"
